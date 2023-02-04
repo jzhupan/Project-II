@@ -71,3 +71,10 @@ for (let i = 0; i < input.length; i ++){
 // console.log(resultArray);
 let resultString = resultArray.join('').toUpperCase();
 console.log(resultString);
+
+//Write a nested for loop that will print out the iterator value of the outer loop times the iterator value of the inner loop.///
+for (let i = 0; i < 11; i++){
+  for (let j = 0; j < 11; j++){
+    console.log(i*j);  
+  }
+}
