@@ -30,3 +30,44 @@ do {
 } while (cupsAdded < cupsOfSugarNeeded) {
   console.log(cupsAdded + 'cups of sugar added');
 }
+
+//The break keyword in a Loop//
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i]);
+  if (rapperArray[i] === "Notorious B.I.G.") {
+    break;
+  }
+}
+console.log("And if you don't know, now you know.");
+
+//******************Whale talk******************//
+let input = 'acountryMile';
+// let input = 'hello human';
+const vowels = ['a','e','i','o','u'];
+//Whales only speak vowels//
+let resultArray = [];
+for (let i = 0; i < input.length; i ++){
+  //Whales speak double 'e' and 'u'//
+   if (input[i] === 'e'){
+    resultArray.push(input[i]);
+  }
+    if (input[i] === 'u'){
+      resultArray.push(input[i]);
+    }
+  // console.log(input[i].toLowerCase() + ' ' + i);
+  //Was able to only print the vowels//
+  for (let vInnerLoop = 0; vInnerLoop < vowels.length; vInnerLoop ++){
+    if (input[i] === vowels[vInnerLoop]){
+      let vowelsResults = vowels[vInnerLoop];
+      // console.log(vowelsResults);
+    resultArray.push(vowelsResults);
+    }
+    // console.log(vowels[vInnerLoop]+ ' ' + vInnerLoop);
+  }
+}
+// console.log(resultArray);
+let resultString = resultArray.join('').toUpperCase();
+console.log(resultString);
