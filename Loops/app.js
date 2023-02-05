@@ -78,3 +78,15 @@ for (let i = 0; i < 11; i++){
     console.log(i*j);  
   }
 }
+
+//Complete the JavaScript code block so that the loop will exit after the value of counter becomes larger than the value of bar.///
+const bar = 78;
+let counter = 0;
+ 
+for (let i = 0; i < 100; i++) {
+  counter = counter + 10;
+  if (counter > bar) {
+    break;
+  }
+  console.log(counter);
+}
