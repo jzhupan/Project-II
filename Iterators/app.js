@@ -31,7 +31,7 @@ const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
   console.log(checkConsistentOutput(addTwo, 6));
 
 
-//Iterators//
+//Iterators - Choose the correct iterator//
 
 const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
 
