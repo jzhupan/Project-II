@@ -24,10 +24,35 @@ storyWords = storyWords.map(word => {
     return word;
 })
 
+// console.log(story);
+// console.log(count);
+
+
+let badWordIndex = storyWords.findIndex((word) => {
+  if (word === badWord){
+  return "freaking";
+  } 
+})
+// console.log(badWordIndex);
+
+storyWords[badWordIndex] = "really";
+
+let lengthCheck = storyWords.every((word) => {
+  return word <= 10;
+})
+// console.log(lengthCheck);
+
+let longWord = storyWords.filter(word => word.length > 10)
+// console.log(longWord);
+
+let longWordIndex = storyWords.findIndex((longWord) => {
+  if (longWord === "breathtaking"){
+  return "stunning";
+  } 
+})
+console.log(longWordIndex);
+storyWords[111] = "stunning";
+
+
 story = storyWords.join(' ');
-
-
-
 console.log(story);
-console.log(count);
-
