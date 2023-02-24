@@ -79,3 +79,14 @@ let spaceship = {
   
   let firstPassenger = spaceship.passengers[0]
   console.log(firstPassenger)
+
+  //Pass By Reference
+  let spaceship = {
+    'Fuel Type' : 'Turbo Fuel',
+    homePlanet : 'Earth'
+  };
+  
+  // Write your code below
+  let greenEnergy = spaceship => {
+     spaceship['Fuel Type'] = 'avocado oil';
+  }
