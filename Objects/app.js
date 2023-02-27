@@ -131,6 +131,7 @@ let spaceship = {
 // Write your code below
 for (let crewMember in spaceship.crew) {
   console.log(
-    `[crew member's role]: [crew member's name].spaceship`
+    `${crewMember} : ${spaceship.crew[crewMember].name}`
   )
 }
+
